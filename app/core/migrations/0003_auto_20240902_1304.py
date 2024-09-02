@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 default=False,
                 help_text=(
                     'Designates that this user has all permissions without'
-                     'explicitly assigning them.'),
+                    'explicitly assigning them.'),
                 verbose_name='superuser status'),
         ),
     ]
