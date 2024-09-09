@@ -33,18 +33,24 @@ class Migration(migrations.Migration):
                 default=False,
                 help_text=(
                     'Designates that this user has all permissions without explicitly assigning them.'),
-            verbose_name='superuser status'),
+                verbose_name='superuser status'),
         ),
         migrations.CreateModel(
             name='Recipe',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True,
+                    primary_key=True,
+                    serialize=False,
+                    verbose_name='ID')),
                 ('title', models.CharField(max_length=255)),
                 ('description', models.TextField(blank=True)),
                 ('time_minutes', models.IntegerField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=5)),
                 ('link', models.CharField(blank=True, max_length=255)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]
