@@ -1,13 +1,1 @@
-79-not started
-started the 79 but not completed
-gett the errors   apps.populate(settings.INSTALLED_APPS)
-  File "/py/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
-    app_config = AppConfig.create(entry)
-  File "/py/lib/python3.9/site-packages/django/apps/config.py", line 224, in create
-    import_module(entry)
-  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'recipe' look in to INSTALLED_APPS
+81
