@@ -407,7 +407,7 @@ class PrivateRecipeApiTests(TestCase):
         in2 = Ingredient.objects.create(user=self.user, name='Chicken')
         r1.ingredients.add(in1)
         r2.ingredients.add(in2)
-        r3 = create_recipe(user=self.user, title='Red Lentil Daal')
+        r3 = create_recipe(user=self.user, title='Red Lentil Dal')
 
         params = {'ingredients': f'{in1.id},{in2.id}'}
         res = self.client.get(RECIPES_URL, params)
